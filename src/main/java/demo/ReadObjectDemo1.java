@@ -23,5 +23,6 @@ public class ReadObjectDemo1 implements Serializable{
     public void use(ObjectInputStream input) throws IOException, ClassNotFoundException {
         ObjectInputStream ois = new ObjectInputStream(input);
         Object obj = (Object)ois.readObject();
+        new ReadObjectDemo1().readObject(null);//use ReadObjectDemo1.readObject
     }
 }
