@@ -1,5 +1,6 @@
 package demo;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.Serializable;
 
@@ -18,5 +19,9 @@ public class ReadObjectDemo1 implements Serializable{
     private void writeObject(java.io.ObjectOutputStream objectOutputStream)throws java.io.IOException{
         System.out.println("writeObject");
 
+    }
+    public void use(ObjectInputStream input) throws IOException, ClassNotFoundException {
+        ObjectInputStream ois = new ObjectInputStream(input);
+        Object obj = (Object)ois.readObject();
     }
 }
