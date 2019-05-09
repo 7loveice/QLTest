@@ -13,5 +13,6 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 		ReadObjectDemo1 readObjectDemo1 = new ReadObjectDemo1();
 		readObjectDemo1.readObject(null);
+		XYYYSSSSSAQQWQQW
 	}
 }
